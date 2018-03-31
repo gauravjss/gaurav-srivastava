@@ -32,8 +32,7 @@
         "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
         "../node_modules/jquery.easing/jquery.easing.min.js",
         "../node_modules/scrollreveal/dist/scrollreveal.min.js",
-        "../node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
-        "assets/js/creative.min.js"
+        "../node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
