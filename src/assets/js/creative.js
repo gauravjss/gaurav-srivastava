@@ -7,6 +7,7 @@
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
+        // Fix for Firefox
         if(target.offset() == undefined){
           var ypos = target.pageY-$('#canvas').offset().top;
           console.log(ypos,'target');
@@ -37,6 +38,7 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
+    // Fix for Firefox
     if($("#mainNav").offset() == undefined){
       var ypos = $("#mainNav").pageY-$('#canvas').offset().top;
       console.log(ypos,'mainnav');
