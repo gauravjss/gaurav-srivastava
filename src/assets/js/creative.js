@@ -26,12 +26,28 @@
     offset: 57
   });
 
+  if(e.offsetX==undefined) // this works for Firefox
+  {
+    xpos = e.pageX-$('#canvas').offset().left;
+    ypos = e.pageY-$('#canvas').offset().top;
+  }
+
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
+    if($("#mainNav")==undefined){
+      var ypos = $("#mainNav").pageY-$('#canvas').offset().top;
+      if (ypos > 100) {
+        $("#mainNav").addClass("navbar-shrink");
+      } else {
+        $("#mainNav").removeClass("navbar-shrink");
+      }
+    }
+    else{
+      if ($("#mainNav").offset().top > 100) {
+        $("#mainNav").addClass("navbar-shrink");
+      } else {
+        $("#mainNav").removeClass("navbar-shrink");
+      }
     }
   };
   // Collapse now if page is not at top
