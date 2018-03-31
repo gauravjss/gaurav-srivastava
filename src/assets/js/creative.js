@@ -7,18 +7,9 @@
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
-        // Fix for Firefox
-        if(target.offset() == undefined){
-          var ypos = target.pageY-$('#canvas').offset().top;
-          console.log(ypos,'target');
-          $('html, body').animate({
-            scrollTop: (ypos - 57)
-          }, 1000, "easeInOutExpo");
-        }else{
-          $('html, body').animate({
-            scrollTop: (target.offset().top - 57)
-          }, 1000, "easeInOutExpo");
-        }
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 57)
+        }, 1000, "easeInOutExpo");
         return false;
       }
     }
@@ -35,25 +26,12 @@
     offset: 57
   });
 
-
   // Collapse Navbar
   var navbarCollapse = function() {
-    // Fix for Firefox
-    if($("#mainNav").offset() == undefined){
-      var ypos = $("#mainNav").pageY-$('#canvas').offset().top;
-      console.log(ypos,'mainnav');
-      if (ypos > 100) {
-        $("#mainNav").addClass("navbar-shrink");
-      } else {
-        $("#mainNav").removeClass("navbar-shrink");
-      }
-    }
-    else{
-      if ($("#mainNav").offset().top > 100) {
-        $("#mainNav").addClass("navbar-shrink");
-      } else {
-        $("#mainNav").removeClass("navbar-shrink");
-      }
+    if ($("#mainNav").offset().top > 100) {
+      $("#mainNav").addClass("navbar-shrink");
+    } else {
+      $("#mainNav").removeClass("navbar-shrink");
     }
   };
   // Collapse now if page is not at top
