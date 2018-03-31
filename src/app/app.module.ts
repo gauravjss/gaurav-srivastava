@@ -10,6 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
+import { Timeline2Component } from './timeline2/timeline2.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HeaderComponent } from './header/header.component';
     NavigationComponent,
     ContactComponent,
     AboutComponent,
-    HeaderComponent
+    HeaderComponent,
+    Timeline2Component
   ],
   imports: [
     BrowserModule
