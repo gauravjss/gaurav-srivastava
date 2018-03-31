@@ -7,9 +7,17 @@
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 57)
-        }, 1000, "easeInOutExpo");
+        if(target.offset() == undefined){
+          var ypos = target.pageY-$('#canvas').offset().top;
+          console.log(ypos,'target');
+          $('html, body').animate({
+            scrollTop: (ypos - 57)
+          }, 1000, "easeInOutExpo");
+        }else{
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 57)
+          }, 1000, "easeInOutExpo");
+        }
         return false;
       }
     }
@@ -26,16 +34,12 @@
     offset: 57
   });
 
-  if(e.offsetX==undefined) // this works for Firefox
-  {
-    xpos = e.pageX-$('#canvas').offset().left;
-    ypos = e.pageY-$('#canvas').offset().top;
-  }
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if($("#mainNav")==undefined){
+    if($("#mainNav").offset() == undefined){
       var ypos = $("#mainNav").pageY-$('#canvas').offset().top;
+      console.log(ypos,'mainnav');
       if (ypos > 100) {
         $("#mainNav").addClass("navbar-shrink");
       } else {
