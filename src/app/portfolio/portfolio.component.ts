@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  closeResult: string;
+
+  constructor(private modalService: NgbModal) {}
+
+  open(content) {
+    this.modalService.open(content , { size: 'lg', backdrop: 'static' });
+  }
 
   ngOnInit() {
   }

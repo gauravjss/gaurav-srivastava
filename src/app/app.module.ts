@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { TimelineComponent } from './timeline/timeline.component';
@@ -23,10 +23,11 @@ import { Timeline2Component } from './timeline2/timeline2.component';
     ContactComponent,
     AboutComponent,
     HeaderComponent,
-    Timeline2Component
+    Timeline2Component,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

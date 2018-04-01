@@ -3,10 +3,11 @@
     <h2 class="section-heading">What I have Done</h2>
     <hr class="my-4">
   </div>
+
   <div class="container-fluid p-0">
-    <div class="row no-gutters popup-gallery">
+    <div class="row no-gutters">
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="../assets/img/portfolio/fullsize/pl.jpg">
+        <a class="portfolio-box" (click)="open(pharmacy)">
           <img class="img-fluid" src="../assets/img/portfolio/thumbnails/pl.jpg" alt="">
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -20,8 +21,9 @@
           </div>
         </a>
       </div>
+
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="../assets/img/portfolio/fullsize/refills.jpg">
+        <a class="portfolio-box" (click)="open(pharmacy)">
           <img class="img-fluid" src="../assets/img/portfolio/thumbnails/refills.jpg" alt="">
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -36,7 +38,7 @@
         </a>
       </div>
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="../assets/img/portfolio/fullsize/cdc.jpg">
+        <a class="portfolio-box" (click)="open(pharmacy)">
           <img class="img-fluid" src="../assets/img/portfolio/thumbnails/cdc.jpg" alt="">
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -52,7 +54,7 @@
       </div>
 
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="../assets/img/portfolio/fullsize/innovation.jpg">
+        <a class="portfolio-box" (click)="open(pharmacy)">
           <img class="img-fluid" src="../assets/img/portfolio/thumbnails/innovation.jpg" alt="">
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -68,7 +70,7 @@
       </div>
 
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="../assets/img/portfolio/fullsize/lego.jpg">
+        <a class="portfolio-box" (click)="open(pharmacy)">
           <img class="img-fluid" src="../assets/img/portfolio/thumbnails/lego.jpg" alt="">
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -76,22 +78,22 @@
                 Lego Systems
               </div>
               <div class="project-name">
-                B2B - eCommerce Portal
+                B2B - eCommerce Webshop Portal
               </div>
             </div>
           </div>
         </a>
       </div>
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="../assets/img/portfolio/fullsize/6.jpg">
-          <img class="img-fluid" src="../assets/img/portfolio/thumbnails/6.jpg" alt="">
+        <a class="portfolio-box" (click)="open(pharmacy)">
+          <img class="img-fluid" src="../assets/img/portfolio/thumbnails/enr.jpg" alt="">
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
               <div class="project-category text-faded">
-                Category
+                E&R - Infosys Technologies
               </div>
               <div class="project-name">
-                Project Name
+                Trainer Allocation and Feedback System
               </div>
             </div>
           </div>
@@ -100,3 +102,58 @@
     </div>
   </div>
 </section>
+
+
+<ng-template #pharmacy let-c="close" let-d="dismiss">
+  <div class="modal-header bg-saffron">
+    <h4 class="modal-title text-white">Pharmacy Locator</h4>
+    <button type="button" class="close text-white" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p style="margin-bottom: .0001pt; text-align: center; line-height: normal;"><strong><span style="font-size: 15.0pt; font-family: 'Helvetica','sans-serif'; color: #333333;">&nbsp;</span></strong></p>
+    <p style="margin-bottom: .0001pt; line-height: normal;"><strong><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;">Environment:&nbsp;</span></strong><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;">Angular JS, Node JS, HTML5, CSS3, HPQC.</span></p>
+    <p style="margin-bottom: .0001pt; line-height: normal;"><strong><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;">Client:</span></strong><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;">&nbsp;CVS Caremark</span><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Project Title:&nbsp;</span></strong><span style="background: white;">Pharmacy Locator</span><br /><strong><span style="background: white;">Duration:&nbsp;</span></strong><span style="background: white;">August 2015 </span></span><span style="font-size: 9.0pt; font-family: 'Tahoma','sans-serif'; color: #333333; background: white;">-</span><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;"> December 2015</span><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Role:&nbsp;</span></strong><span style="background: white;">Technical Lead</span><br /><strong><span style="background: white;">Description:&nbsp;</span></strong><span style="background: white;">The purpose of this project is to create a new stand along FAST component to support request new RX functionality. The application has ability to login to the CVS Caremark website, check for the drugs, request new prescription, search for an alternatives. User is having an option to set the default pharmacy, change the default pharmacy, search for a drug at the selected pharmacy and gets the price of the drug. He can check how much his plan will pay and how much he has to pay. </span></span></p>
+    <p style="margin-bottom: .0001pt; line-height: normal;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Responsibilities:</span></strong></span></p>
+    <ul>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Assist in the development, design and implementation of application systems using AngularJS, HTML, CSS and MVC architecture. Serve as member of a project team or as an individual contributor when assigned.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Reused existing and created custom directives like rating, header, footer.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Reused and created filter like masking.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Assist in design of complex, global or strategic development projects. Identify and address interfacing functions and applications.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Perform application systems development tasks which include working with users to define system needs, analysing and designing applications to meet user needs, translating logic diagrams into program statements, deploying and implementing packages and conducting research in emerging technologies.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Design, code, test, debug and document programs.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">&nbsp;Provide computer program, system development and technical support for very complex, highly critical programs and systems. Plan and coordinate tests, resolve production problems, identify opportunities to improve systems and architecture.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Initiate system analysis, lead the definition of user requirements and assesses impacts. Determine alternate solutions with risk analysis and identify opportunities to use technology to improve availability and advance business initiatives.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Coordinate development activities, evaluate and report performance of project.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Maintain proficiency in programming languages, program development, testing and serve as an expert in area of responsibility.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Provide technical analysis and solutions to issues and technical direction.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Utilize technical expertise to manage multiple assignments, including large and critical projects to assure timely and cost-effect objectives delivery.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Schedule and prioritize work and plan a sequence of development activities that accomplish the planned targets. Set priorities and provide reports to the management..</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Developing responsive design user interface service applications.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Review code and guiding teammates during the development processes.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Analysing, debugging and fixing the front end user interface issues assigned through bug tracking tools.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Fixing cross browser and environmental issues.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Unit testing and regression testing of web application.</span></li>
+      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif';">Resolving technical and design issues and performing independent unit testing.</span></li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+
+<ng-template #content2 let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Modal title 2222</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>One fine body&hellip;</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
