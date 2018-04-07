@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { Timeline2Component } from './timeline2/timeline2.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -27,9 +28,10 @@ import { Timeline2Component } from './timeline2/timeline2.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
