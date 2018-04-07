@@ -25,7 +25,8 @@ export class DataStorageService{
 
   private saveToFileSystem(response) {
     console.log('inside save to file system');
-    const filename = 'Resume.pdf'
+    const date = new Date().toDateString();
+    const filename = `Gaurav_Resume_${date}.pdf`
     const blob = new Blob([response], { type: 'application/pdf' });
     saveAs(blob, filename);
   }
