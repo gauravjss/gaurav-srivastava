@@ -18,13 +18,13 @@ export class DataStorageService{
         responseType: 'blob'
       }).map(
       (response) => {
-        console.log(response);
+        //console.log(response);
         this.saveToFileSystem(response);
       });
   }
 
   private saveToFileSystem(response) {
-    console.log('inside save to file system');
+    //console.log('inside save to file system');
     const date = new Date().toDateString();
     const filename = `Gaurav_Resume_${date}.pdf`
     const blob = new Blob([response], { type: 'application/pdf' });
