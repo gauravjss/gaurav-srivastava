@@ -23,22 +23,7 @@
       </div>
 
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" (click)="open(refill)">
-          <img class="img-fluid" src="../assets/img/portfolio/thumbnails/refills.jpg" alt="">
-          <div class="portfolio-box-caption">
-            <div class="portfolio-box-caption-content">
-              <div class="project-category text-faded">
-                CVS Health
-              </div>
-              <div class="project-name">
-                Refill Prescriptions
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" (click)="open(pharmacy)">
+        <a class="portfolio-box" (click)="open(cdc)">
           <img class="img-fluid" src="../assets/img/portfolio/thumbnails/cdc.jpg" alt="">
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -54,15 +39,32 @@
       </div>
 
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" (click)="open(pharmacy)">
-          <img class="img-fluid" src="../assets/img/portfolio/thumbnails/innovation.jpg" alt="">
+        <a class="portfolio-box" (click)="open(refill)">
+          <img class="img-fluid" src="../assets/img/portfolio/thumbnails/refills.jpg" alt="">
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
               <div class="project-category text-faded">
                 CVS Health
               </div>
               <div class="project-name">
-                Innovation Labs
+                Refill Prescriptions
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" (click)="open(innovation)">
+          <img class="img-fluid" src="../assets/img/portfolio/thumbnails/innovation.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Innovation Labs - CVS Health
+              </div>
+              <div class="project-name">
+                Health Management Mobile App
               </div>
             </div>
           </div>
@@ -84,6 +86,7 @@
           </div>
         </a>
       </div>
+
       <div class="col-lg-4 col-sm-6">
         <a class="portfolio-box" (click)="open(pharmacy)">
           <img class="img-fluid" src="../assets/img/portfolio/thumbnails/enr.jpg" alt="">
@@ -112,29 +115,25 @@
     </button>
   </div>
   <div class="modal-body">
-    <p style="margin-bottom: .0001pt; line-height: normal;"><strong><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;">Environment:&nbsp;</span></strong><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;">Angular 4, Node JS, HTML5, CSS3.</span></p>
-    <p style="margin-bottom: .0001pt; line-height: normal;"><strong><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;">Client:</span></strong><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;">&nbsp;CVS Caremark</span><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Project Title:&nbsp;</span></strong><span style="background: white;">Pharmacy Locator</span><br /><strong><span style="background: white;">Role:&nbsp;</span></strong><span style="background: white;">Technical Lead</span><br /><strong><span style="background: white;">Description:&nbsp;</span></strong><span style="background: white;">The purpose of this project is to create a new stand along FAST component to support request new RX functionality. The application has ability to login to the CVS Caremark website, check for the drugs, request new prescription, search for an alternatives. User is having an option to set the default pharmacy, change the default pharmacy, search for a drug at the selected pharmacy and gets the price of the drug. He can check how much his plan will pay and how much he has to pay. </span></span></p>
-    <p style="margin-bottom: .0001pt; line-height: normal;"><span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; color: #333333;"><br /></span><strong><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333;">Responsibilities:</span></strong></p>
+    <p><strong><span style="font-family: 'Arimo','sans-serif';">Environment:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Angular 4, Node JS, HTML5.</span></p>
+    <p><strong><span style="font-family: 'Arimo','sans-serif';">End Client:</span></strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span><span style="font-family: 'Arimo','sans-serif';">CVS Caremark</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /></span><strong><span style="font-family: 'Arimo','sans-serif';">Project Title:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Pharmacy Locator</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /></span><strong><span style="font-family: 'Arimo','sans-serif';">Role:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Technical Project Lead</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /></span><strong><span style="font-family: 'Arimo','sans-serif';">Description:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">The purpose of this project is to create a new standalone FAST component to support the locate pharmacy functionality. The application is embedded inside caremark.com enterprise portal and is also sold to end clients as a standalone to be embedded in their business portals.</span></p>
+    <p style="text-indent: 36.0pt;"><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family: 'Arimo','sans-serif';">It has ability the to search for pharmacies by providing options like ZIP or City &amp; State, or County &amp; State and set a pharmacy as a default pharmacy. Users can also filter the search based on many other options like Onsite medical clinic, Open 7 days week, drive thru clinic, flu shot options etc. On search result section it also has an option to search a drug at the selected pharmacy by redirecting the user to the check drug cost component keeping the pharmacy preference preselected.</span></p>
+    <p><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /></span><strong><span style="font-family: 'Arimo','sans-serif';">Responsibilities:</span></strong></p>
     <ul>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Assist in the development, design and implementation of application systems using Angular, HTML, CSS and MVC architecture. Serve as member of a project team or as an individual contributor when assigned.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Reused existing and created custom directives like rating, header, footer.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Reused and created filter like masking.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Assist in design of complex, global or strategic development projects. Identify and address interfacing functions and applications.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Perform application systems development tasks which include working with users to define system needs, analysing and designing applications to meet user needs, translating logic diagrams into program statements, deploying and implementing packages and conducting research in emerging technologies.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Design, code, test, debug and document programs.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">&nbsp;Provide computer program, system development and technical support for very complex, highly critical programs and systems. Plan and coordinate tests, resolve production problems, identify opportunities to improve systems and architecture.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Initiate system analysis, lead the definition of user requirements and assesses impacts. Determine alternate solutions with risk analysis and identify opportunities to use technology to improve availability and advance business initiatives.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Coordinate development activities, evaluate and report performance of project.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Maintain proficiency in programming languages, program development, testing and serve as an expert in area of responsibility.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Provide technical analysis and solutions to issues and technical direction.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Utilize technical expertise to manage multiple assignments, including large and critical projects to assure timely and cost-effect objectives delivery.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Schedule and prioritize work and plan a sequence of development activities that accomplish the planned targets. Set priorities and provide reports to the management..</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Developing responsive design user interface service applications.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Review code and guiding teammates during the development processes.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Analysing, debugging and fixing the front end user interface issues assigned through bug tracking tools.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Fixing cross browser and environmental issues.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Unit testing and regression testing of web application.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Resolving technical and design issues and performing independent unit testing.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Lead the team in the design, development and implementation of high quality responsive enterprise application system.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Perform application systems development tasks which include working with business to define system needs, analysing and designing applications to meet user needs, translating logic diagrams into program statements, deploying and implementing packages and conducting research in emerging technologies.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Provide computer program, system development and technical support for very complex, highly critical programs and systems. Plan and coordinate tests, resolve production problems, identify opportunities to improve systems and architecture.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Developing responsive design user interface service applications.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Initiate system analysis, lead the definition of user requirements and assesses impacts. Determine alternate solutions with risk analysis and identify opportunities to use technology to improve availability and advance business initiatives.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Coordinate development activities, evaluate and report performance of project.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Maintain proficiency in programming languages, program development, testing and serve as an expert in area of responsibility.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Provide technical analysis and solutions to issues and technical direction.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Utilize technical expertise to manage multiple assignments, including large and critical projects to assure timely and cost-effect objectives delivery.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Schedule and prioritize work and plan a sequence of development activities that accomplish the planned targets. Set priorities and provide reports to the senior management.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Review code and guiding the teammates during the review processes.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Analysing, debugging and fixing the front end user interface issues assigned through ALM.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Involved in unit testing and regression testing of the application.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Applying the WCAG Accessibility guidelines throughout the development phase.</span></li>
     </ul>
   </div>
   <div class="modal-footer">
@@ -150,35 +149,129 @@
     </button>
   </div>
   <div class="modal-body">
-    <p style="margin-bottom: .0001pt; line-height: normal;"><strong><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;">Environment :&nbsp;</span></strong><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;">Angular JS, Node JS, HTML5, CSS3, HPQC</span><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Client :</span></strong><span style="background: white;">&nbsp;CVS Caremark, CVS Specialty</span><br /><strong><span style="background: white;">Project Title :&nbsp;</span></strong><span style="background: white;">Personalized Refill</span><br /><strong><span style="background: white;">Duration :&nbsp;</span></strong><span style="background: white;">March 2015 </span></span><span style="font-size: 10.5pt; font-family: 'Tahoma','sans-serif'; color: #333333; background: white;">�</span><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333; background: white;"> July 2015</span><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Role :&nbsp;</span></strong><span style="background: white;">Lead Developer</span><br /><strong><span style="background: white;">Description:&nbsp;</span></strong><span style="background: white;">The purpose of this project is to create a new stand along FAST component to support request new RX functionality. The application has ability to login to the CVS Caremark website, check for the drugs, request new prescription, search for an alternatives. User is having an option to set the default pharmacy, change the default pharmacy, search for a drug at the selected pharmacy and gets the price of the drug. He can check how much his plan will pay and how much he has to pay. This is the application we are working on migrating the application from JAVA to Angular JS.</span><br /><br /><strong><span style="background: white;">Responsibilities:</span></strong><br /><br /></span></p>
+    <p><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">Environment:&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Angular 2, Node JS, HTML5.</span></p>
+    <p><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">End Client:</span></strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span><span style="font-family: 'Arimo','sans-serif';">CVS Caremark</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Project Title:&nbsp; </span></strong></span><span style="font-family: 'Arimo','sans-serif';">Check Drug Cost</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Role:&nbsp; </span></strong></span><span style="font-family: 'Arimo','sans-serif';">Technical Lead</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Description:&nbsp; </span></strong></span><span style="font-family: 'Arimo','sans-serif';">The purpose of this project is to create a new standalone FAST component to support the refill drug functionality. The application is embedded inside caremark.com enterprise portal and is also sold to end clients as a standalone to be embedded in their business portals.</span></p>
+    <p><span style="font-family: 'Arimo','sans-serif';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This was basically a migration of existing component from the JSF-Java framework to Angular 2. The functionality revolves around the workflow for refill order where the user who is entitled to refill options as per the PBM and doctor approvals. To start with user needs to authenticate using Rx. No. and date of birth. Once the system authenticates these values the 2nd screen shows all the refills available for the user. User can select one or more refills and move to the last screen where there are shipping and payment options where the user can add, edit shipping and payment preferences and place an order for the refill.</span></p>
+    <p><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Responsibilities:</span></strong></span></p>
     <ul>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Assist in the development, design and implementation of application systems using Angular, HTML, CSS and MVC architecture. Serve as member of a project team or as an individual contributor when assigned.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Creating independent module like spinner, logging.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Reused existing and created custom directives like rating, header , footer.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Reused and created filter like masking.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Assist in design of complex, global or strategic development projects. Identify and address interfacing functions and applications.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Perform application systems development tasks which include working with users to define system needs, analysing and designing applications to meet user needs, translating logic diagrams into program statements, deploying and implementing packages and conducting research in emerging technologies.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Design, code, test, debug and document programs.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Provide computer program, system development and technical support for very complex, highly critical programs and systems. Plan and coordinate tests, resolve production problems, identify opportunities to improve systems and architecture.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Initiate system analysis, lead the definition of user requirements and assesses impacts. Determine alternate solutions with risk analysis and identify opportunities to use technology to improve availability and advance business initiatives.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Coordinate development activities, evaluate and report performance of project.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Maintain proficiency in programming languages, program development, testing and serve as an expert in area of responsibility.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Provide technical analysis and solutions to issues and technical direction.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Utilize technical expertise to manage multiple assignments, including large and critical projects to assure timely and cost-effect objectives delivery.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Schedule and prioritize work and plan a sequence of development activities that accomplish the planned targets. Set priorities and provide reports to the management.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Mentor team members in design and analysis activities.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Assist in the training and orientation of other staff and end users.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Developing responsive design user interface service applications.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Review code and guiding teammates during the development processes.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Analysing, debugging and fixing the front end user interface issues assigned through bug tracking tools.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Fixing cross browser and environmental issues.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Unit testing and regression testing of web application.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Following necessary coding standards and code optimization mechanisms to achieve consistent and high performance throughout the application.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Designing workflows, approval processes and validation rules.</span></li>
-      <li style="color: #333333; line-height: normal; tab-stops: list 36.0pt; background: white;"><span style="font-size: 10.5pt; font-family: 'Helvetica','sans-serif';">Resolving technical and design issues and performing independent unit testing.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Lead the team in the design, development and implementation of high quality responsive enterprise application system.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Perform application systems development tasks which include working with business to define system needs, analysing and designing applications to meet user needs, translating logic diagrams into program statements, deploying and implementing packages and conducting research in emerging technologies.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Provide computer program, system development and technical support for very complex, highly critical programs and systems. Plan and coordinate tests, resolve production problems, identify opportunities to improve systems and architecture.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Developing responsive design user interface service applications.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Initiate system analysis, lead the definition of user requirements and assesses impacts. Determine alternate solutions with risk analysis and identify opportunities to use technology to improve availability and advance business initiatives.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Coordinate development activities, evaluate and report performance of project.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Maintain proficiency in programming languages, program development, testing and serve as an expert in area of responsibility.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Provide technical analysis and solutions to issues and technical direction.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Utilize technical expertise to manage multiple assignments, including large and critical projects to assure timely and cost-effect objectives delivery.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Schedule and prioritize work and plan a sequence of development activities that accomplish the planned targets. Set priorities and provide reports to the senior management.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Review code and guiding the teammates during the review processes.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Analysing, debugging and fixing the front end user interface issues assigned through ALM.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Involved in unit testing and regression testing of the application.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Applying the WCAG Accessibility guidelines throughout the development phase.</span></li>
     </ul>
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
   </div>
 </ng-template>
+
+
+<ng-template #cdc let-c="close" let-d="dismiss">
+  <div class="modal-header bg-saffron">
+    <h4 class="modal-title text-white">Check Drug Cost</h4>
+    <button type="button" class="close text-white" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p><strong><span style="font-family: 'Arimo','sans-serif';">Environment:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Angular 4, Node JS, HTML5.</span></p>
+    <p><strong><span style="font-family: 'Arimo','sans-serif';">End Client:</span></strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span><span style="font-family: 'Arimo','sans-serif';">CVS Caremark</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /></span><strong><span style="font-family: 'Arimo','sans-serif';">Project Title:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Check Drug Cost</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /></span><strong><span style="font-family: 'Arimo','sans-serif';">Role:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Technical Project Lead</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /></span><strong><span style="font-family: 'Arimo','sans-serif';">Description:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">The purpose of this project is to create a new standalone FAST component to support the check drug cost functionality. The application is embedded inside caremark.com enterprise portal and is also sold to end clients as a standalone to be embedded in their business portals.</span></p>
+    <p><span style="font-family: 'Arimo','sans-serif';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;This is the improved CDCv4 of the already existing component. This has many improved features like Price a drug, Price a past search, Price a previously filled prescription. Upon getting the price results based on the pharmacy selected and the PBM plan for the user, it has options on the results page to check the generic alternatives, 30-day, 90-day price options, flex pay options etc. The user can click on request a new drug which takes the user to the drug order component with the preselected options.</span></p>
+    <p><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Responsibilities:</span></strong></span></p>
+    <ul>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Lead the team in the design, development and implementation of high quality responsive enterprise application system.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Perform application systems development tasks which include working with business to define system needs, analysing and designing applications to meet user needs, translating logic diagrams into program statements, deploying and implementing packages and conducting research in emerging technologies.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Provide computer program, system development and technical support for very complex, highly critical programs and systems. Plan and coordinate tests, resolve production problems, identify opportunities to improve systems and architecture.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Developing responsive design user interface service applications.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Initiate system analysis, lead the definition of user requirements and assesses impacts. Determine alternate solutions with risk analysis and identify opportunities to use technology to improve availability and advance business initiatives.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Coordinate development activities, evaluate and report performance of project.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Maintain proficiency in programming languages, program development, testing and serve as an expert in area of responsibility.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Provide technical analysis and solutions to issues and technical direction.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Utilize technical expertise to manage multiple assignments, including large and critical projects to assure timely and cost-effect objectives delivery.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Schedule and prioritize work and plan a sequence of development activities that accomplish the planned targets. Set priorities and provide reports to the senior management.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Review code and guiding the teammates during the review processes.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Analysing, debugging and fixing the front end user interface issues assigned through ALM.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Involved in unit testing and regression testing of the application.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Applying the WCAG Accessibility guidelines throughout the development phase.</span></li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+
+<ng-template #cdc let-c="close" let-d="dismiss">
+  <div class="modal-header bg-saffron">
+    <h4 class="modal-title text-white">Check Drug Cost</h4>
+    <button type="button" class="close text-white" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p><strong><span style="font-family: 'Arimo','sans-serif';">Environment:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Angular 4, Node JS, HTML5.</span></p>
+    <p><strong><span style="font-family: 'Arimo','sans-serif';">End Client:</span></strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span><span style="font-family: 'Arimo','sans-serif';">CVS Caremark</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /></span><strong><span style="font-family: 'Arimo','sans-serif';">Project Title:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Check Drug Cost</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /></span><strong><span style="font-family: 'Arimo','sans-serif';">Role:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Technical Project Lead</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /></span><strong><span style="font-family: 'Arimo','sans-serif';">Description:</span></strong><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">The purpose of this project is to create a new standalone FAST component to support the check drug cost functionality. The application is embedded inside caremark.com enterprise portal and is also sold to end clients as a standalone to be embedded in their business portals.</span></p>
+    <p><span style="font-family: 'Arimo','sans-serif';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;This is the improved CDCv4 of the already existing component. This has many improved features like Price a drug, Price a past search, Price a previously filled prescription. Upon getting the price results based on the pharmacy selected and the PBM plan for the user, it has options on the results page to check the generic alternatives, 30-day, 90-day price options, flex pay options etc. The user can click on request a new drug which takes the user to the drug order component with the preselected options.</span></p>
+    <p><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Responsibilities:</span></strong></span></p>
+    <ul>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Lead the team in the design, development and implementation of high quality responsive enterprise application system.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Perform application systems development tasks which include working with business to define system needs, analysing and designing applications to meet user needs, translating logic diagrams into program statements, deploying and implementing packages and conducting research in emerging technologies.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Provide computer program, system development and technical support for very complex, highly critical programs and systems. Plan and coordinate tests, resolve production problems, identify opportunities to improve systems and architecture.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Developing responsive design user interface service applications.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Initiate system analysis, lead the definition of user requirements and assesses impacts. Determine alternate solutions with risk analysis and identify opportunities to use technology to improve availability and advance business initiatives.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Coordinate development activities, evaluate and report performance of project.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Maintain proficiency in programming languages, program development, testing and serve as an expert in area of responsibility.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Provide technical analysis and solutions to issues and technical direction.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Utilize technical expertise to manage multiple assignments, including large and critical projects to assure timely and cost-effect objectives delivery.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Schedule and prioritize work and plan a sequence of development activities that accomplish the planned targets. Set priorities and provide reports to the senior management.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Review code and guiding the teammates during the review processes.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Analysing, debugging and fixing the front end user interface issues assigned through ALM.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Involved in unit testing and regression testing of the application.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Applying the WCAG Accessibility guidelines throughout the development phase.</span></li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+
+<ng-template #innovation let-c="close" let-d="dismiss">
+  <div class="modal-header bg-saffron">
+    <h4 class="modal-title text-white">Health Management Hybrid Mobile App </h4>
+    <button type="button" class="close text-white" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">Environment:&nbsp; </span></strong><span style="font-family: 'Arimo','sans-serif';">Angular JS (1.5), Node JS, My SQL, Amazon AWS, HTML5, CSS, JS, Cordova, QuickBlox API for Chat, iHealth API for health monitoring data.</span></p>
+    <p><strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">End Client:</span></strong><span style="font-family: 'Arimo','sans-serif'; color: #333333; background: white;">&nbsp; </span><span style="font-family: 'Arimo','sans-serif';">Innovation Labs, CVS Health.</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Project Title:&nbsp; </span></strong></span><span style="font-family: 'Arimo','sans-serif';">My Patient and Doctor Hybrid Mobile App</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Role:&nbsp; </span></strong></span><span style="font-family: 'Arimo','sans-serif';">Individual Contributor (Lead)</span><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Description:&nbsp; </span></strong></span><span style="font-family: 'Arimo','sans-serif';">This project was more of a research and development work as a part of Innovation Labs for CVS.</span></p>
+    <p style="text-indent: 36.0pt;"><span style="font-family: 'Arimo','sans-serif';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hybrid mobile app for patients with multiple features like profile management, recording multiple health stats like blood glucose, blood pressure, pulse, weight using manual as well as device API. Ability to chat free/paid with the doctor from within the app scheduling appointments with the doctor and many more features like Adherence etc. </span></p>
+    <p style="text-indent: 36.0pt;"><span style="font-family: 'Arimo','sans-serif';">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Similarly hybrid mobile app for professionals with multiple features like profile management, scheduling assistant to manage the appointments with the patients. Chatting functionality mainly used by nurse and over-the-app electronic prescription to patients.</span></p>
+    <p><span style="font-family: 'Arimo','sans-serif'; color: #333333;"><br /><strong><span style="background: white;">Responsibilities:</span></strong></span></p>
+    <ul>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">This project was a POC for the innovation labs to demonstrate the niche technologies at the enterprise level. I was among the 2 resources working on this project from Offshore, India. </span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Worked end to end on this project like brainstorming the DB design, converting wireframes to UI, researching on the various api options for connecting app to the health devices and api options for chat application integration.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">There were continuous improvements and advanced features added to these apps like syncing the data from blood pressure and weighing machine to the cloud and to the app through iHealth API.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Enabling advanced chatting option from within the app using QuickBlox API. The chat application was self sufficient and had all the advanced features like delivered and read notifications like a modern chat engine.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Writing Restful Web services using Node JS backend for all the functions of the applications.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Hosted the web services in the AWS EBS and MySQL database in Amazon RDS.</span></li>
+      <li style="tab-stops: list 36.0pt; background: white;"><span style="font-family: 'Arimo','sans-serif';">Created hybrid app using Cordova Phone gap and configuring the options like splash pages for various device options.</span></li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+
+
+
+
