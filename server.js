@@ -9,12 +9,9 @@ app.use(express.static(__dirname + '/dist'));
 
 app.get('/download/:id', (req, res) => {
   var flag = req.params.id;
-  console.log(flag);
   if(flag == 1){
-    console.log('inside if');
     res.download(path.join(__dirname, "/dist/assets/Resume.docx"));
   }else{
-    console.log('inside else');
     res.download(path.join(__dirname, "/dist/assets/Resume.pdf"));
   }
 });
