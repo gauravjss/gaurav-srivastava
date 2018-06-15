@@ -17,12 +17,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  onDownloadResume(){
-    this.dsService.downloadResume().subscribe();
+  onDownloadResume(flag){
+    this.dsService.downloadResume(flag).subscribe();
   }
 
   open(content) {
-    this.modalService.open(content , { size: 'lg', backdrop: 'static' });
+    this.modalService.open(content , { size: 'sm', backdrop: 'static' });
   }
 
 }

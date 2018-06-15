@@ -8,8 +8,28 @@
         <hr>
       </div>
       <div class="col-lg-8 mx-auto">
-        <a class="btn btn-primary btn-xl js-scroll-trigger" (click)="onDownloadResume()" href="#">Download Resume</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" (click)="open(download)" href="#">Download Resume</a>
       </div>
     </div>
   </div>
 </header>
+
+<ng-template #download let-c="close" let-d="dismiss">
+  <div class="modal-header bg-saffron">
+    <h4 class="modal-title text-white">Download Resume</h4>
+    <button type="button" class="close text-white" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <span class="col-lg-6 ">
+      <img class="img-fluid" style="cursor: pointer" src="../assets/img/portfolio/thumbnails/word-doc-icon.png" (click)="onDownloadResume(1)" alt="">
+    </span>
+    <span class="col-lg-6  ">
+      <img class="img-fluid" style="cursor: pointer" src="../assets/img/portfolio/thumbnails/PDF.jpg" (click)="onDownloadResume(0)" alt="">
+    </span>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
