@@ -1,5 +1,6 @@
 import {Component, Injectable, OnInit} from '@angular/core';
 import {DataStorageService} from "../data/data.storage.service";
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 @Injectable()
 @Component({
@@ -10,14 +11,18 @@ import {DataStorageService} from "../data/data.storage.service";
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private dsService: DataStorageService) { }
+  constructor(private dsService: DataStorageService,
+              private modalService: NgbModal) { }
 
   ngOnInit() {
   }
 
   onDownloadResume(){
-    console.log('inside controller')
     this.dsService.downloadResume().subscribe();
+  }
+
+  open(content) {
+    this.modalService.open(content , { size: 'lg', backdrop: 'static' });
   }
 
 }
